@@ -1,0 +1,118 @@
+/* Importación de fuente moderna y llamativa */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-image: 
+    radial-gradient(#262626 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Título principal maximalista */
+h1:first-of-type {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: 4px solid #000000;
+  box-shadow: 10px 10px 0px #404040;
+}
+
+/* Subtítulos de las entradas */
+h1:not(:first-of-type) {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a3a3a3;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs de texto */
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.2rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #171717;
+  border: 3px solid #525252;
+  border-radius: 0;
+  outline: none;
+  margin-bottom: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #ffffff;
+  background-color: #262626;
+  box-shadow: 6px 6px 0px #ffffff;
+  transform: translate(-3px, -3px);
+}
+
+/* Botón de acción principal */
+button {
+  margin-top: 1rem;
+  padding: 1.2rem 3rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 4px solid #000000;
+  cursor: pointer;
+  box-shadow: 8px 8px 0px #737373;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  background-color: #e5e5e5;
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #ffffff;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #ffffff;
+}
+
+/* Texto de resultado destacado */
+#secret-result {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 3rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #ffffff;
+  padding: 0.5rem 1rem;
+}
